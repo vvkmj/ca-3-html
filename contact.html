@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The Homely Skillset</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+}
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -48,6 +50,17 @@
     </style>
 </head>
 <body>
+    function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if(username === 'shivansh' && password === 'password') {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+    } else {
+        alert('Invalid login credentials');
+        return false
+    }
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
